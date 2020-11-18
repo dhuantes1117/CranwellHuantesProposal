@@ -1,1 +1,4 @@
 proposalDrafts/DanStuff/
+*.aux
+*.log
+*.out
