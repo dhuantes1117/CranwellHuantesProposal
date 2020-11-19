@@ -1,4 +1,5 @@
 proposalDrafts/DanStuff/
+*.synctex.gz
 *.aux
 *.log
 *.out
