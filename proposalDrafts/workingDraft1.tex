@@ -39,12 +39,13 @@ The next issue is finding values for the physical properties of tissue in questi
 Finally, the temperature throughout the medium is location and time dependent, and while regions of relatively similar properies can be identified, solving the heat equation at each value of $t$ in each region subject to boundary conditions that change through each time step could present a large computational strain. This issue's main source is that for relatively long timescales, the transient response may have large effects, especially in the case of situations in which the source dissapears before a steady state solution is reached, like for a pulsed laser. 
 
 \section{Methodology}
+Our plan is to create a 3D time-dependent thermal solver to measure heat flow in weakly homogenous media in C++, using existing libraries that Dr. Clark has developed. By working with the libraries Dr. Clark has created we save time in terms of developing frameworks for modeling 3D geometries. In addition, any work we accomplish can be easily able to be built upon, such as the use of LibArrhenius to calculate damage thresholds. 
 
-Our plan is to create a 3D time-dependent thermal solver to measure heat flow in weakly homogenous media in C++, using existing libraries that Dr. Clark has developed. By applying a hyperbolic heat equation in conjunction with numerical techniques to deal with the unique geometry that weakly homogenous tissue presents. By working with the libraries Dr. Clark has created we save time in terms of developing frameworks for modeling 3D geometries, as well as having any work we may accomplish easily able to be furthered, such as through the use of LibArrhenius to calculate damage thresholds. In terms of the long term we also have an idea for using grocery store meat in order to have a relatively cheap, replicable thing to qualitatively compare
+Once a model is developed, it is difficult to know if the computational results match real-world scenarios, and rigorous experimental processes are useful in characterizing models. One potenial solution to get a rough idea of the viability of a model would be forgoing the rigor, and instead opting for something readily available to be tested on, with some clear indication that a certain temperature had been reached. We propose that for a mostly qualitative study, meat could be cooked in order to roughly estimate a model's accuracy, as there is certain temperatures at which the meat is considered "cooked", and it is clear if a model vastly over or underestimates this state (through if the meat is raw or burnt). 
 
-\subsection{Equation ideas}
-\subsection{Numerical Methods/Solvers}
-\section{Front propagation}
 \section{Goals}
+The end goal is to create a 3D time-dependent thermal solver to measure heat flow in weakly homogenous media in C++. With this in place, such a model can be used for a varity of different situations. One such situation  potentially being laser heating as used in medical practices. 
 
+\section{Feedback} 
+Dr. Clark, this section is not a part of our report, but please provide us with feedback. We only know as much on this subject as we have researched on our own time and we would value your opinion on any areas where we've bitten off more than we could chew or are missing a large part of the picture. If this proposal seems too broad we are open to ideas to hone in on. 
 \end{document}
