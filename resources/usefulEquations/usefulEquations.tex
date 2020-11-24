@@ -25,8 +25,39 @@ Dump equations here with titles and with a brief blurb about what it is, assumpt
 \end{aligned}
 \label{fig:FLHC}
 \end{equation} 
-$\boldsymbol{q}$ is the local heat flux density,
-$k$ is the material's conductivity,
-$T$ is the temperature
+$\boldsymbol{q}$ is the local heat flux density $\si{\watt\meter^2}$,
+$k$ is the material's conductivity$\si{\watt\meter^1\kelvin^-1}$, and in an anisotropic medium, k is a second order tensor that varies with location if the material is non-uniform
+$T$ is the temperature $\si{\kelvin\meter^-1}$
+\subsection{Thermal Current Conservation}
+\begin{equation}
+\begin{aligned}
+\nabla\cdot\boldsymbol{q}(\boldsymbol{x}, t) + \frac{k}{\alpha} \frac{\partial T}{\partial t}(\boldsymbol{x}, t) = S(\boldsymbol{x}, t)
+\label{fig:TCC}
+\end{aligned}
+\end{equation}
+$\boldsymbol{q}$ is the local heat flux density, $\alpha$ is 
+\begin{math}
+k = \frac{k}{\rho c}
+\end{math}
+where $c$ is the specific heat, and $\rho$ is the density
+\subsection{Parabolic Heat Transfer Equation}
+\begin{equation}
+\begin{aligned}
+\nabla\cdot\boldsymbol{q}(\boldsymbol{x}, t) + \frac{k}{\alpha} \frac{\partial T}{\partial t}(\boldsymbol{x}, t) = S(\boldsymbol{x}, t)
+\label{fig:PHTE}
+\end{aligned}
+\end{equation}
+Assuming thermal current conservation and Fourier's law hold directly yieldsthis
+\subsection{Pennes Bioheat Equation}
+\begin{equation}
+\begin{aligned}
+S(\boldsymbol{x}, t) = S_s(\boldsymbol{x}, t) + S_p(\boldsymbol{x}, t) + S_m(\boldsymbol{x}, t)
+\label{fig:PBHE}
+\end{aligned}
+\end{equation}
+
+
+
+
 
 \end{document}
